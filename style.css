@@ -22,7 +22,6 @@ body {
     font-family: Mulish;
     font-size: 36px;
     font-weight: 800;
-    
 }
 .header-title .imp{
     color: #FF5400;
@@ -31,7 +30,11 @@ body {
     font-weight: 800;
     
 }
-
+.header-title{
+    display: flex;
+    align-items: center;
+    
+}
 .navigation ul{
     display: flex; 
      gap: 44px;
@@ -54,7 +57,7 @@ body {
     background-image: url('Images/Group\ 13\ \(1\)\ \(1\).png');
     background-repeat: no-repeat;
     border-radius: 16px;
-    
+   
 }
 
 .banner-content h1{
@@ -81,7 +84,7 @@ body {
 }
 .buttons{
     width: 900px;
-    margin: 48px auto;
+    margin: 15px auto;
     display: flex;
     align-items: center;
     padding: 16px;
@@ -92,9 +95,16 @@ body {
 }
 .buttons input,.btn{
     padding: 16px;
-    width: 174px;
+    width: 154px;
     border-radius: 8px;
     border-style: none;
+}
+.buttons .btn{
+    width: 174px;
+}
+.buttons img{
+    width:24px ;
+    height:24px ;
 }
 .btn1{
     display: flex;
@@ -220,7 +230,6 @@ font-weight: 400;
 }
 
 
-
 .hotel{
     border-radius: 16px;
 border: 1px solid rgba(251, 181, 99, 0.20);
@@ -263,8 +272,10 @@ margin: 81px auto;
   .news-letter{
     width: 1170px;
     margin: 100px auto;
+    height: 500px;
     display: flex;
     gap: 24px;
+    margin-bottom: 100px;
   }
    
   .newscontent{
@@ -272,7 +283,7 @@ margin: 81px auto;
    height: 422px;
 border-radius: 16px;
 border: 1px solid #FF5400;
-padding: 40px;
+padding: 19px;
   }
 
 .newscontent h3{
@@ -282,12 +293,38 @@ font-size: 24px;
 font-weight: 800;
 
 }
+.travel{
+    max-width: 250px;
+    max-height: 130px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    position: relative;
+    bottom: 186px;
+    left: 390px;
+    text-align: center;
+    padding: 10px;
+}
+.travel h3{
+   
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 24px;
+font-weight: 400;
+}
+.travel h1{
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-weight: 800;
 
+}
  .inputs input{
     display: flex;
     flex-direction: column;
    padding: 15px;
-   margin-bottom: 20px;
+   margin-bottom: 15px;
    width: 393px;
    border-radius: 8px;
 background: rgba(19, 19, 24, 0.05);
@@ -308,12 +345,14 @@ border-style: none;
 footer{
     background: rgba(19, 19, 24, 0.05);
     height: 502px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
 }
 .foot{
-  margin: 110px auto;
+  margin: 41px auto;
     max-width: 872px;
-   align-items: center;
-   justify-content: center;
 
 
 }
@@ -325,7 +364,10 @@ footer{
     justify-content: center;
     margin-top: -100px;
 }
+.footer-title img,h2{
+    margin-top: 140px;
 
+}
 
 .imp{
     color: #FF5400;
@@ -346,91 +388,128 @@ font-weight: 800;
 
 @media screen and (max-width:576px){
    .banner{
-    width: 100%;
-    height: 300px;
+    width: 80%;
+    height: auto;
     display: flex;
-    margin: 20px 0;
-position: relative;
+    margin: 20px auto;
+    position: relative;
     flex-direction: column;
    }
-   .banner-content{
+   .banner-content h1{
     text-align: center;  
-    padding: 20px;
-  text-align: center; 
+    padding-top: 0px;
+   text-align: center; 
+   font-size: 24px;
 }
-
-.banner-content h1 {
-    font-size: 32px;
-    font-weight: 800;
-    margin-bottom: 10px;
+.banner-content p{
+    text-align: center;  
+    padding-top: 0px;
+   text-align: center; 
+   font-size: 17px;
+   justify-content: center;
+   align-items: center;
+   margin: 5px auto;
+}
+ .banner .banner-content{
+    padding-top: 0px;
+ }
+ 
+  .buttons{
+    width: 80%;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
   }
-  
-  .banner-content p {
-    margin-top: 10px;
-    font-size: 14px;
-    line-height: 20px;
-    max-width: 100%;
+
+  .buttons input,button{
+    margin: 5px auto;
+    gap: 5px;
+  }
+
+ .tour,.destination{
+    width: 350px;
+    flex-direction: column;
+    height: auto;
+
+    
+ }
+ .tour .tour-content{
+    width: 100%;
+ }  
+ 
+ .tour .tour-img{
+    
+    min-width: 335px;
+    height: 342px;
+    margin: 2px auto;
+ }
+
+
+
+
+.destination .row1{
+    flex-direction: column;
+    
+  } 
+
+
+ .destination .row2, .row3{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+ }
+ 
+  .destination .row2 img{
+    width: 100%;
+  }
+  .destination .row3 img{
+    width: 100%;
+  }
+  .destination img{
+    max-height:180px ;
+  }
+     
+    .choose{
+        min-width: 335px;
+        margin: 5px auto;
+    }
+ 
+
+    .choose-content{
+        text-align: center;
+    }
+
+   
+    .twobox{
+        flex-direction: column;
+        width: 100%;
+        margin: 5px auto;
+    }
+    
+
+     .news-letter{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    
+     }
+   .newscontent{
+      width: 335px;
+      height: 400px;
+      margin-left: auto;
+      margin-right: auto;
+ }
+  .newsimage{
+    width: 350px;
+    margin: 0px auto;
     margin-left: auto;
     margin-right: auto;
   }
 
 
 
-    .buttons{
-        width: 100%;
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   padding: 16px;
-   border-radius: 8px;
-   background: rgba(255, 255, 255, 0.30);
-}
-.buttons input,
-.btn {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border-style: none;
-  margin-bottom: 10px;
-}
 
-.down-arrow,
-.search-icon {
-  display: none;
-}
-
- .tour{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding: 15px;
-    
- }
- .tour-content{
-    display: block;
-    flex-direction: column;
-    width: 100%;
-   
- }
-
-
- .row1 img{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
- }
-.row2,.row3{
-    grid-template-columns: repeat(1,1fr);
-}
-
-.row3 img{
-    width: 100%;
-}
- .row2 img{
-    width: 100%;
-   
-   
- }
 
 
 
